@@ -1,0 +1,15 @@
+skills:
+  finnish: Taidot
+  english: Skills
+programming_and_markup_languages:
+  finnish: Ohjelmointi- ja merkintäkielet
+  english: Programming and Markup languages
+software_development_and_project_management:
+  finnish: Ohjelmistokehitys ja projektinhallinta
+  english: Software development and project management
+misc_skills:
+  finnish: Myös nämä ovat tuttuja
+  english: I am also familiar with the following
+relevant_work_experience:
+  finnish: Olennainen työkokemus
+  english: Relevant work experience

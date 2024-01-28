@@ -1,0 +1,28 @@
+{% extends 'base.j2' %}
+{% block head %}
+<style>
+{{ stylesheet | readfile }}
+</style>
+{% endblock %}
+{% block title %}
+Ansioluettelo &ndash; {{ name }}
+{% endblock %}
+{% block body %}
+<main>
+{% include 'about_me.j2' %}
+{% include 'skills.j2' %}
+{% include 'work_experience.j2' %}
+</main>
+<footer>
+{% include 'contact.j2' %}
+</footer>
+{% endblock %}
+{% block background %}
+<svg id="background" viewBox="0 0 2100 2970" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <path class="main-color" d="M0,0 L0,2400 L100,2300 L100,800 L600,800 L2100,800 L2100,0" />
+    <path class="secondary-color" d="M0,2425 L100,2325 L100,2425 L0,2525"/>
+    <path class="tertiary-color" d="M0,2550 L100,2450 L100,2500 L0,2600"/>
+  </g>
+</svg>
+{% endblock %}

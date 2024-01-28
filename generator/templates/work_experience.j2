@@ -1,0 +1,17 @@
+<section id="work_experience">
+    <h2>{{ keywords['relevant_work_experience'] }}</h2>
+    <ol>
+        {% for item in work_experience %}
+        <li>
+            <div class="employer"><span>{{ item['employer'] }}</span></div>
+            <div class="title"><span>{{ item['title'] }}</span></div>
+            <div class="when">
+                {% for period in item['when'] %}
+                    <span class="period"><span>{{ period['start'] }}</span>&ndash;<span>{{ period['end'] or '' }}</span></span>
+                {% endfor %}
+            </div>
+            <div class="description">{{ item['description'] | markdown }}</div>
+        </li>
+        {% endfor %}
+    </ol>
+</section>

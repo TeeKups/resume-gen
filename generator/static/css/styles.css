@@ -1,0 +1,236 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    --margin: 0.5in;
+
+    --color-1: #e11937;
+    --color-2: #5236ab;
+    --bg: white;
+    --accent-1: #e8e5f2;
+    --text-1: black;
+    --text-2: white;
+}
+
+@page {
+    size: A4;
+}
+
+@media print {
+    html, body {
+        overflow: hidden;
+    }
+}
+
+:root {
+    font-size: 14px;
+}
+
+html, body {
+    width: 100%;
+    text-align: justify;
+}
+
+html {
+    background-color: lightgrey;
+}
+
+body {
+    margin: 3mm auto;
+    @media print {
+        margin: 0;
+    }
+    background-color: white;
+    width: 210mm;
+    height: 297mm;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    z-index: 0;
+}
+
+h2 {
+    line-height: 100%;
+    padding-bottom: 0.2em;
+    font-size: 1.4em;
+}
+
+h3 {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+p {
+    padding-bottom: 0.5em;
+}
+
+header, main, footer {
+    padding: 0 var(--margin);
+    &:first-child {
+        padding-top: var(--margin);
+    }
+    &:nth-last-child(2) {
+        padding-bottom: var(--margin);
+    }
+    z-index: 3;
+}
+
+section {
+    width: 100%;
+    &:not(:first-child) {
+        margin-top: 0.5em;
+    }
+}
+
+section#contact {
+    flex-basis: 100%;
+    display: flex;
+    height: fit-content;
+    justify-content: space-between;
+    align-items: center;
+
+    a, a:visited, a:active, a:hover {
+        text-decoration: none;
+        color: black;
+    }
+
+    > div, > div > div {
+        display: flex;
+        align-items: center;
+        gap: 0.2em;
+    }
+
+    #address {
+        display: flex;
+        gap: 1em;
+    }
+}
+
+section#about-me {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    column-gap: 1em;
+
+    #picture {
+        img {
+            width: 5cm;
+            height: calc(5/4 * 5cm);
+            border: 1.5mm solid var(--accent-1);
+        }
+    }
+
+    #introduction {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.8em;
+
+        #info > div:first-child {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #name {
+            font-size: 1.4em;
+            font-weight: bold;
+        }
+
+        #languages ol {
+            list-style-type: none;
+            li {
+                display: inline;
+            }
+
+            svg {
+                margin-top: 0.2em;
+                height: 1.3em;
+                border: 1px solid black;
+            }
+        }
+    }
+}
+
+section#skills {
+    ul, ol {
+        li {
+            display: inline;
+            &::after {
+                content: ",";
+            }
+            &:last-child::after {
+                content: "";
+            }
+        }
+    }
+}
+
+section#work_experience {
+    ul, ol {
+        list-style-type: none;
+        li {
+            padding-bottom: 0.5em;
+        }
+    }
+
+    .employer {
+        font-weight: bold;
+        font-size: 1.0em;
+    }
+
+    .title {
+        font-size: 1.0em;
+    }
+
+    .when {
+        font-size: 0.7em;
+        .period::after {
+            content: ",";
+        }
+
+        .period:last-child::after {
+            content: "";
+        }
+    }
+
+    .description {
+        font-size: 0.9em;
+    }
+}
+#introduction {
+    padding: 1em;
+    border-radius: 1em;
+}
+
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 210mm;
+    height: 100%;
+    z-index: 2;
+}
+
+#background {
+    .main-color {
+        fill: var(--color-1);
+        stroke: var(--color-1);
+    }
+
+    .secondary-color {
+        fill: var(--color-2);
+        stroke: var(--color-2);
+    }
+
+    .tertiary-color {
+        fill: var(--accent-1);
+        stroke: var(--accent-1);
+    }
+}
+
+#introduction {
+    background-color: var(--accent-1);
+}

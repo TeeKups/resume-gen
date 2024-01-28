@@ -1,0 +1,25 @@
+<section id="about-me">
+    <div id="picture">
+        <img alt="A picture of me" src="{{ image }}" />
+    </div>
+    <div id="introduction">
+        <div id="info">
+            <div>
+                <div id="name">{{ name }}</div>
+                <div id="languages">
+                <ol>
+                    {% for language in languages %}
+                    <li><a href="{{ language['description'] }}.html">{{ language['icon'] }}</a></li>
+                    {% endfor %}
+                </ol>
+                </div>
+            </div>
+            <div id="education">
+                <div>{{ education['level'] }} ({{ education['curriculum'] }}, {{ education['major'] }}) {{ education['year'] }}</div>
+            </div>
+        </div>
+        <div id="summary">
+            {{ summary | markdown }}
+        </div>
+    </div>
+</section>

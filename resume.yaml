@@ -1,0 +1,121 @@
+---
+image: static/img/placeholder.jpg
+name: Bengt Åke Persson
+email: bengt.åke@mail.xyz
+tel: "+358401231234"
+address: Pengarvägen 420 B
+zip_code: 00200
+city: Helsinki
+education:
+  year: 2021
+  finnish:
+    level: Diplomi-insinööri
+    curriculum: tietotekniikka
+    major: ohjelmistotekniikka
+  english:
+    level: Master of Science
+    curriculum: Computer Science
+    major: Same in english
+languages:
+  - icon: <svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-fi" viewBox="0 0 640 480"> <path fill="#fff" d="M0 0h640v480H0z"/> <path fill="#002f6c" d="M0 174.5h640v131H0z"/> <path fill="#002f6c" d="M175.5 0h130.9v480h-131z"/> </svg>
+    description: finnish
+  - icon: <svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-gb" viewBox="0 0 640 480"> <path fill="#012169" d="M0 0h640v480H0z"/> <path fill="#FFF" d="m75 0 244 181L562 0h78v62L400 241l240 178v61h-80L320 301 81 480H0v-60l239-178L0 64V0z"/> <path fill="#C8102E" d="m424 281 216 159v40L369 281zm-184 20 6 35L54 480H0zM640 0v3L391 191l2-44L590 0zM0 0l239 176h-60L0 42z"/> <path fill="#FFF" d="M241 0v480h160V0zM0 160v160h640V160z"/> <path fill="#C8102E" d="M0 193v96h640v-96zM273 0v480h96V0z"/> </svg>
+    description: english
+
+summary:
+  finnish: |
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate eleifend turpis eget iaculis. Nulla facilisi.
+    In erat eros, venenatis ac dapibus vel, porta vitae enim. Phasellus dignissim leo ac tincidunt dignissim.
+    Etiam id laoreet dolor. Praesent auctor lobortis mauris vel sollicitudin.
+
+    Nunc maximus lectus lacus, et vulputate dolor varius at. Fusce gravida interdum ligula nec malesuada.
+    Pellentesque malesuada ultricies justo, vel consequat dolor sagittis ac. Ut in pretium enim, in imperdiet est.
+    Donec maximus, augue vitae vestibulum ultricies, lorem justo iaculis nulla, sed elementum odio tellus ut mi.
+    Aliquam auctor dui eget egestas dapibus. Nulla blandit sapien nulla, eget ullamcorper libero placerat vitae.
+  english: |
+    The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+    The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+    The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+    The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+    The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+    The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+    The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+
+work_experience:
+  - employer: Company.
+    title:
+      finnish: Ohjelmistoinsinööri
+      english: Software engineer
+    when:
+      - start: 2020
+        end:
+    description:
+      finnish: |
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate eleifend turpis eget iaculis. Nulla facilisi.
+        In erat eros, venenatis ac dapibus vel, porta vitae enim. Phasellus dignissim leo ac tincidunt dignissim.
+        Etiam id laoreet dolor. Praesent auctor lobortis mauris vel sollicitudin.
+      english: |
+        The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+        The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+        The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+  - employer: Other company.
+    title:
+      finnish: Kahvin keittäjä
+      english: Coffee brewer
+    when:
+      - start: 4/2017
+        end: 9/2017
+      - start: 05/2018
+        end: 09/2018
+    description:
+      finnish: |
+        Keitin paljon kahvia. Keitin paljon kahvia. Keitin paljon kahvia. Keitin paljon kahvia.
+        Keitin paljon kahvia. Keitin paljon kahvia. Keitin paljon kahvia. Keitin paljon kahvia.
+        Keitin paljon kahvia. Keitin paljon kahvia. Keitin paljon kahvia. Keitin paljon kahvia.
+        Keitin paljon kahvia. Keitin paljon kahvia. Keitin paljon kahvia. Keitin paljon kahvia.
+        Keitin paljon kahvia. Keitin paljon kahvia. Keitin paljon kahvia. Keitin paljon kahvia.
+      english: |
+        Made lots of coffee. Made lots of coffee. Made lots of coffee. Made lots of coffee.
+        Made lots of coffee. Made lots of coffee. Made lots of coffee. Made lots of coffee.
+        Made lots of coffee. Made lots of coffee. Made lots of coffee. Made lots of coffee.
+        Made lots of coffee. Made lots of coffee. Made lots of coffee. Made lots of coffee.
+        Made lots of coffee. Made lots of coffee. Made lots of coffee. Made lots of coffee.
+
+skills:
+  languages:
+    programming:
+      - Haskell
+      - Ada
+      - Fortran
+      - Pascal
+      - Objective-C
+      - COBOL
+    markup:
+      - html
+      - markdown
+      - latex
+  tools:
+    - Git
+    - SVN
+    - Foo
+    - Bar
+    - Linux
+  project_management:
+    - Jira
+    - Scrum
+    - Kanban
+  other:
+    - AAA
+    - BBB
+    - CCC
+    - finnish: Kahvin keittäminen
+      english: Brewing coffee
+    - finnish: Nakkihommien tekeminen
+      english: Running errands
+    - finnish: Leuan heilutus
+      english: Running my mouth
+    - finnish: Ajan tuhlaus
+      english: Wasting time
+
