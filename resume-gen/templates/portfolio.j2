@@ -1,0 +1,15 @@
+<section id="portfolio">
+<h2>{{ keywords['portfolio'] }}</h2>
+<ul>
+    {% for item in portfolio %}
+    <li class="portfolio-item">
+        <div>
+            <div class="title">{{ item['title'] }}</div>
+            <div class="git-url"><span>Git</span><a href="{{ item['url'] }}">{{ item['url'] }}</a></div>
+        </div>
+
+        <div class="description">{{ item['description'] }}</div>
+    </li>
+    {% endfor %}
+</ul>
+</section>

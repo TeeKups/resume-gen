@@ -10,6 +10,18 @@ software_development_and_project_management:
 misc_skills:
   finnish: Myös nämä ovat tuttuja
   english: I am also familiar with the following
+portfolio:
+  finnish: Portfolio
+  english: Portfolio
 relevant_work_experience:
   finnish: Olennainen työkokemus
   english: Relevant work experience
+3-star-tooltip:
+  finnish: Kykenen täysin itsenäiseen työskentelyyn
+  english: I am fully capable of independent working
+2-star-tooltip:
+  finnish: Tarvitsen satunnaisesti neuvontaa
+  english: I sometimes need assistance
+1-star-tooltip:
+  finnish: Tuttuja mutta käytännön kokemus on vähäistä
+  english: Familiar but little to no practical experience

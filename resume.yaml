@@ -84,32 +84,29 @@ work_experience:
         Made lots of coffee. Made lots of coffee. Made lots of coffee. Made lots of coffee.
 
 skills:
-  languages:
-    programming:
-      - Haskell
-      - Ada
-      - Fortran
-      - Pascal
-      - Objective-C
-      - COBOL
-    markup:
-      - html
-      - markdown
-      - latex
-  tools:
+  -
+    - Haskell
+    - Ada
+    - Fortran
+    - Pascal
+    - Objective-C
+    - COBOL
+    - html
+    - markdown
+    - latex
+  -
     - Git
     - SVN
     - Foo
     - Bar
     - Linux
-  project_management:
     - Jira
     - Scrum
     - Kanban
-  other:
     - AAA
     - BBB
     - CCC
+  -
     - finnish: Kahvin keittäminen
       english: Brewing coffee
     - finnish: Nakkihommien tekeminen
@@ -119,3 +116,19 @@ skills:
     - finnish: Ajan tuhlaus
       english: Wasting time
 
+portfolio:
+  - title: Hello world
+    description:
+      finnish: |
+        Mukava käyttäjäänsä&mdash;tai tarkemmin maailmaa&mdash;tervehtivä ohjelma.
+      english: |
+        Nice little program that greets its user&mdash;or rather, the world.
+    url: foo.xyz/hello-world
+
+  - title: Alarm clock
+    description:
+      finnish: |
+        Herättää joka aamu klo 6.00 aamulla!
+      english: |
+        Wakes you up at 6:00 am with no exceptions!
+    url: foo.xyz/shit-fucker

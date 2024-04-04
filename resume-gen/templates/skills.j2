@@ -1,0 +1,35 @@
+<section id="skills">
+<h2>{{ keywords['skills'] }}</h2>
+<div class="tooltip">
+<span> {{ 3 | stars }} {{ keywords['3-star-tooltip'] }} </span>
+<span> {{ 2 | stars }} {{ keywords['2-star-tooltip'] }} </span>
+<span> {{ 1 | stars }} {{ keywords['1-star-tooltip'] }} </span>
+</div>
+<div id="skill-listing">
+    <div>
+        <div>{{ 3 | stars }}</div>
+        <ul>
+        {% for item in skills[0] %}
+            <li>{{ item }}</li>
+        {% endfor %}
+        </ul>
+    </div>
+    <div>
+        <div>{{ 2 | stars }}</div>
+        <ul>
+        {% for item in skills[1] %}
+            <li>{{ item }}</li>
+        {% endfor %}
+        </ul>
+    </div>
+    <div>
+        <div>{{ 1 | stars }}</div>
+        <ul>
+        {% for item in skills[2] %}
+            <li>{{ item }}</li>
+        {% endfor %}
+        </ul>
+    </div>
+</div>
+
+</section>
