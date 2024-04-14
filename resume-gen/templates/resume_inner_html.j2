@@ -2,7 +2,12 @@
 {% include 'about_me.j2' %}
 {% include 'skills.j2' %}
 {% include 'work_experience.j2' %}
-{% include 'portfolio.j2' %}
+{% if portfolio %}
+    {% include 'portfolio.j2' %}
+{% endif %}
+{% if hobbies %}
+    {% include 'hobbies.j2' %}
+{% endif %}
 </div>
 <div class="footer">
 {% include 'contact.j2' %}

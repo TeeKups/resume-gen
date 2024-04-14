@@ -13,6 +13,9 @@ misc_skills:
 portfolio:
   finnish: Portfolio
   english: Portfolio
+hobbies:
+  finnish: Harrastukset
+  english: Hobbies
 relevant_work_experience:
   finnish: Olennainen työkokemus
   english: Relevant work experience

@@ -116,19 +116,29 @@ skills:
     - finnish: Ajan tuhlaus
       english: Wasting time
 
-portfolio:
-  - title: Hello world
-    description:
-      finnish: |
-        Mukava käyttäjäänsä&mdash;tai tarkemmin maailmaa&mdash;tervehtivä ohjelma.
-      english: |
-        Nice little program that greets its user&mdash;or rather, the world.
-    url: foo.xyz/hello-world
+#portfolio:
+#  - title: Hello world
+#    description:
+#      finnish: |
+#        Mukava käyttäjäänsä&mdash;tai tarkemmin maailmaa&mdash;tervehtivä ohjelma.
+#      english: |
+#        Nice little program that greets its user&mdash;or rather, the world.
+#    url: foo.xyz/hello-world
+#
+#  - title: Alarm clock
+#    description:
+#      finnish: |
+#        Herättää joka aamu klo 6.00 aamulla!
+#      english: |
+#        Wakes you up at 6:00 am with no exceptions!
+#    url: foo.xyz/shit-fucker
 
-  - title: Alarm clock
-    description:
-      finnish: |
-        Herättää joka aamu klo 6.00 aamulla!
-      english: |
-        Wakes you up at 6:00 am with no exceptions!
-    url: foo.xyz/shit-fucker
+hobbies:
+  finnish:
+    Tässä voi vaikka kertoa harrastuksistaan.
+    Tai jos ei halua kertoa, niin tämän voi poistaa
+    kuten yllä olevan portfolio-tietueen.
+  english:
+    Here you can list some hobbies.
+    Or maybe if you don't want to list anything,
+    you can remove this item like the portfolio above.

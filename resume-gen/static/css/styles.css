@@ -34,6 +34,12 @@
     font-size: 14px;
 }
 
+a,
+a:visited {
+    color: var(--text-1);
+    text-decoration: none;
+}
+
 html, body {
     width: 100%;
     text-align: justify;
@@ -253,7 +259,7 @@ section#work_experience {
     }
 
     .description {
-        font-size: 0.9em;
+        font-size: 1em;
     }
 }
 
