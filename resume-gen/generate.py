@@ -3,6 +3,7 @@ import yaml
 import markdown
 import datetime
 import os
+import base64
 
 from . import languagedict
 
@@ -37,11 +38,22 @@ def read_file(path):
 def stars(amount):
     return amount * '''<svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>'''
 
+def base64_image(path: str):
+    try:
+        extension = os.path.splitext(path)[1][1:]
+        with open(path, 'rb') as image:
+            image_data = base64.b64encode(image.read()).decode()
+            return f'data:image/{extension};base64,{image_data}'
+
+    except IndexError:
+        raise RuntimeException(f"Extension of file {path} is not a valid MIME type.")
 
 env.filters['markdown'] = process_markdown
 env.filters['phonenumber'] = format_phone_number
 env.filters['readfile'] = read_file
 env.filters['stars'] = stars
+env.filters['base64_image'] = base64_image
+
 
 
 def render_inner_html(source: str, language: str):
